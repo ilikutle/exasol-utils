@@ -1,7 +1,3 @@
-{% test equal_rowcount(model, compare_model) %}
-  {{ return(adapter.dispatch('test_equal_rowcount', 'dbt_utils')(model, compare_model)) }}
-{% endtest %}
-
 {% macro exasol__test_equal_rowcount(model, compare_model) %}
 
     {#-- Needs to be set at parse time, before we return '' below --#}
